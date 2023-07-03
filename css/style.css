@@ -578,6 +578,10 @@ list-style:none;
   grid-template-columns: repeat(7, 1fr);
 }
 
+.daynumbers {
+    min-height: 2em;
+}
+
 .weekdays {
     background: lightblue;
 
@@ -600,6 +604,26 @@ list-style:none;
 
 }
 
+.timeslots li {
+    min-height: 60px;
+}
+
+.timeslots li::after {
+    content: "";
+    position:absolute;
+    left: 10px;
+    width: 100px;
+    height: 1px;
+    background: lightgray;
+    z-index: 1;
+}
+
+
+.slot {
+    position: absolute;
+    background: lightblue;
+    
+}
 
    .brand-container{
     text-align: center;
