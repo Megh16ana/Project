@@ -6,6 +6,7 @@ let formClose=document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn= document.querySelectorAll('.vid-btn');
+let eventcalender=document.querySelector('.event calender')
 
 
 
@@ -35,6 +36,7 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
 
+
 videoBtn.forEach(btn=>{
     btn.addEventListener('click', ()=>{
      document.querySelector('.controls .active').classList.remove('active');
@@ -43,6 +45,7 @@ videoBtn.forEach(btn=>{
      document.querySelector('#video-slider').src =src;
     });
 });
+
 
 var swiper = new Swiper(".mySwiper", {
     scrollbar: {
